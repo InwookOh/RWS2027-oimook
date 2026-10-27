@@ -1,0 +1,30 @@
+{
+  "checkpoints": [
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_001.pth",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_002.pth",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_003.pth",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_004.pth",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_005.pth"
+  ],
+  "completed_epochs": 5,
+  "cuda_cache_released": true,
+  "elapsed_seconds": 16954.803004026413,
+  "frozen_state_sha256_after_training": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "frozen_state_sha256_before_training": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "frozen_state_unchanged": true,
+  "gpu": {
+    "compute_apps": [],
+    "memory_total_mib": 12196,
+    "memory_used_mib": 2,
+    "name": "NVIDIA TITAN Xp",
+    "pci_bus_id": "00000000:09:00.0",
+    "utilization_gpu_percent": 0,
+    "uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06"
+  },
+  "gpu_peak_allocated_mib": 2524.45,
+  "gpu_peak_reserved_mib": 2854.0,
+  "max_epochs": 5,
+  "phase": "complete",
+  "pid": 2582,
+  "updated_at_utc": "2026-10-13T09:05:01.398255+00:00"
+}

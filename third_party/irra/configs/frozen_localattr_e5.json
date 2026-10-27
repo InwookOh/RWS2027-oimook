@@ -1,0 +1,53 @@
+{
+  "architecture": "qb-vit-l14-frozen-multiscale-local-8-16-24-v1",
+  "initial_checkpoint": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth",
+  "initial_checkpoint_sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b",
+  "initial_run_dir": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37",
+  "data_root": "/root/workplace/UPAR-Challenge-2027-main/data",
+  "expected_gpu_uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06",
+  "model": {
+    "img_size": [378, 126],
+    "stride_size": 14,
+    "text_length": 77,
+    "vocab_size": 49408,
+    "temperature": 0.02,
+    "cmt_depth": 4,
+    "map_loss_weight": 1.0,
+    "attr_loss_weight": 0.5,
+    "local_heads": 8,
+    "fusion_weight": 0.0,
+    "attribute_score": "nll",
+    "multiscale_blocks": [8, 16, 24],
+    "initial_scale_weights": [0.2, 0.2, 0.6]
+  },
+  "train": {
+    "batch_size": 32,
+    "num_epoch": 5,
+    "num_workers": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.00004,
+    "adam_betas": [0.9, 0.999],
+    "adam_eps": 0.001,
+    "seed": 20271013,
+    "log_period": 100,
+    "precision": "FP32",
+    "warmup_epochs": 0,
+    "scheduler": "cosine",
+    "scheduler_t_max": 5,
+    "scheduler_eta_min": 0.00001,
+    "scheduler_step": "once after validation and checkpoint save at each epoch end",
+    "gradient_accumulation_steps": 1,
+    "gradient_clipping": null
+  },
+  "validation": {
+    "test_batch_size": 128,
+    "evaluation_micro_batch_size": 32,
+    "num_workers": 8,
+    "fusion_method": "Global+NLL, z-score each per-query branch, equalized with validation-selected weight",
+    "coarse_weights": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    "fine_step": 0.02,
+    "fine_radius": 0.10,
+    "selection": "maximum validation mADM; ties prefer lower local weight"
+  },
+  "checkpoint_policy": "plain full-model state_dict only; one epoch_00N.pth for each completed epoch 1..5"
+}

@@ -1,0 +1,36 @@
+{
+  "original_files_unchanged": {
+    "LICENSE": true,
+    "upar/__init__.py": true,
+    "upar/attributes.py": true,
+    "upar/prompts.py": true,
+    "upar/tokenizer.py": true,
+    "upar/masking.py": true,
+    "upar/sampling.py": true,
+    "upar/data.py": true,
+    "upar/config.py": true,
+    "upar/images.py": true,
+    "upar/metrics.py": true,
+    "model/clip_model.py": true,
+    "model/build.py": true,
+    "model/objectives.py": true,
+    "datasets/transforms.py": true,
+    "utils/simple_tokenizer.py": true,
+    "utils/__init__.py": true,
+    "utils/meter.py": true,
+    "solver/lr_scheduler.py": true,
+    "data/bpe_simple_vocab_16e6.txt.gz": true
+  },
+  "preserved_code_identical": [
+    "upar/attributes.py",
+    "upar/prompts.py",
+    "upar/tokenizer.py",
+    "upar/masking.py",
+    "upar/sampling.py",
+    "upar/data.py",
+    "datasets/transforms.py",
+    "utils/simple_tokenizer.py",
+    "solver/lr_scheduler.py"
+  ],
+  "other_experiment_code_imported": false
+}

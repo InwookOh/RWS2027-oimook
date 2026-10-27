@@ -1,0 +1,192 @@
+{
+  "agreement_score_shape": [
+    2,
+    3
+  ],
+  "bce": 0.994924008846283,
+  "device": "cuda",
+  "elapsed_seconds": 285.0,
+  "expanded_model_strict_load": true,
+  "frozen_gradients_absent": true,
+  "frozen_parameter_count": 496908544,
+  "frozen_state_sha256_after_optimizer_step": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "fused_score_shape": [
+    2,
+    3
+  ],
+  "global_score_max_abs_difference": 3.5762786865234375e-07,
+  "gpu": {
+    "memory_total_mib": 12196,
+    "memory_used_mib": 0,
+    "name": "NVIDIA TITAN Xp",
+    "utilization_gpu_percent": 0,
+    "uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06"
+  },
+  "gpu_peak_allocated_mib": 2457.64,
+  "gpu_peak_reserved_mib": 2904.0,
+  "gpu_uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06",
+  "initial_checkpoint": {
+    "bytes": 1987834245,
+    "epoch": 2,
+    "metric_record": {
+      "epoch": 2,
+      "epoch_seconds": 15998.391094145365,
+      "global_step": 6106,
+      "gpu_memory": {
+        "max_memory_allocated": 8540649984,
+        "max_memory_reserved": 8977907712,
+        "memory_allocated": 5966972416,
+        "memory_reserved": 8977907712
+      },
+      "losses": {
+        "loss": 5.133154783610586,
+        "map_loss": 2.7746750891350955,
+        "sdm_loss": 2.3584796944754896
+      },
+      "lr": 2.8000000000000003e-06,
+      "metrics": {
+        "Rank-1": 0.2605430387059503,
+        "Rank-10": 0.6062969381860196,
+        "Rank-5": 0.5063547082611207,
+        "mADM": 0.6892085492607469,
+        "mAP": 0.27867486191652097,
+        "mINP": 0.18366185188173428
+      },
+      "next_lr": 4.600000000000001e-06,
+      "weight": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth"
+    },
+    "model_config": {
+      "cmt_depth": 4,
+      "img_size": [
+        378,
+        126
+      ],
+      "map_loss_weight": 1.0,
+      "stride_size": 14,
+      "temperature": 0.02,
+      "text_length": 77,
+      "vocab_size": 49408
+    },
+    "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth",
+    "plain_state_dict_policy": "plain state_dict only, completed epochs 1..10",
+    "sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b",
+    "validation_log": "2026-10-12 17:13:51,959 INFO Validation Epoch 2: mADM=68.921%, mAP=27.867%, Rank-1=26.054%, Rank-5=50.635%, Rank-10=60.630%, mINP=18.366%; weights=/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth"
+  },
+  "local_score_shape": [
+    2,
+    3
+  ],
+  "multiscale_shapes": {
+    "block16": [
+      3,
+      243,
+      1024
+    ],
+    "block24_final": [
+      3,
+      244,
+      768
+    ],
+    "block8": [
+      3,
+      243,
+      1024
+    ],
+    "joint_dim": 768
+  },
+  "new_head_gradients_finite": true,
+  "new_state_keys": [
+    "local_branch.attribute_bias",
+    "local_branch.attribute_queries",
+    "local_branch.attribute_weights",
+    "local_branch.cross_attention.in_proj_bias",
+    "local_branch.cross_attention.in_proj_weight",
+    "local_branch.cross_attention.out_proj.bias",
+    "local_branch.cross_attention.out_proj.weight",
+    "local_branch.output_norm.bias",
+    "local_branch.output_norm.weight",
+    "local_branch.patch_norm.bias",
+    "local_branch.patch_norm.weight",
+    "local_branch.query_norm.bias",
+    "local_branch.query_norm.weight",
+    "multiscale.fusion_logits",
+    "multiscale.norms.16.bias",
+    "multiscale.norms.16.weight",
+    "multiscale.norms.8.bias",
+    "multiscale.norms.8.weight",
+    "multiscale.projections.16.bias",
+    "multiscale.projections.16.weight",
+    "multiscale.projections.8.bias",
+    "multiscale.projections.8.weight"
+  ],
+  "old_qb_state_sha256_before_step": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "optimizer_parameter_count": 4006955,
+  "original_model_keys": 510,
+  "original_querybalanced_strict_load": true,
+  "passed": true,
+  "precision": "FP32",
+  "preflight_batch_size": 32,
+  "real_validation_sample": {
+    "gallery_images": 3,
+    "gallery_indices": [
+      27441,
+      28640,
+      0
+    ],
+    "global_score_shape": [
+      2,
+      3
+    ],
+    "queries": 2
+  },
+  "sample_fusion_metrics": [
+    {
+      "Rank-1": 1.0,
+      "Rank-10": 1.0,
+      "Rank-5": 1.0,
+      "mADM": 1.0,
+      "mAP": 1.0,
+      "mINP": 1.0
+    },
+    {
+      "Rank-1": 0.0,
+      "Rank-10": 1.0,
+      "Rank-5": 1.0,
+      "mADM": 0.8846153846153846,
+      "mAP": 0.5,
+      "mINP": 0.5
+    }
+  ],
+  "score_dtype": "float64",
+  "source_state_keys": 510,
+  "started_unix": 1791864707.3865147,
+  "temporary_full_state_dict_strict_roundtrip": true,
+  "temporary_state_dict_bytes": 2003869657,
+  "temporary_state_dict_sha256": "cff9b5c4d0050d178b6b58477d41275391d61b52917fc4dd5b30f44c41128159",
+  "trainable_parameter_count": 4006955,
+  "trainable_parameter_names": [
+    "local_branch.attribute_queries",
+    "local_branch.attribute_weights",
+    "local_branch.attribute_bias",
+    "local_branch.query_norm.weight",
+    "local_branch.query_norm.bias",
+    "local_branch.patch_norm.weight",
+    "local_branch.patch_norm.bias",
+    "local_branch.cross_attention.in_proj_weight",
+    "local_branch.cross_attention.in_proj_bias",
+    "local_branch.cross_attention.out_proj.weight",
+    "local_branch.cross_attention.out_proj.bias",
+    "local_branch.output_norm.weight",
+    "local_branch.output_norm.bias",
+    "multiscale.fusion_logits",
+    "multiscale.norms.8.weight",
+    "multiscale.norms.8.bias",
+    "multiscale.norms.16.weight",
+    "multiscale.norms.16.bias",
+    "multiscale.projections.8.weight",
+    "multiscale.projections.8.bias",
+    "multiscale.projections.16.weight",
+    "multiscale.projections.16.bias"
+  ],
+  "weighted_loss": 0.4974620044231415
+}

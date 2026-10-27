@@ -1,0 +1,46 @@
+{
+  "backbone": "clip_vit_l14",
+  "pretrained": "clip_metaclip_l14",
+  "seed": 2027,
+  "deterministic": false,
+  "epochs": 10,
+  "batch_size": 16,
+  "accumulation_steps": 2,
+  "workers": 4,
+  "cpu_threads": 4,
+  "learning_rate": 5e-06,
+  "weight_decay": 0.0005,
+  "optimizer_foreach": false,
+  "loss": "deepmar_bce",
+  "ema": true,
+  "ema_decay": 0.999,
+  "label_smoothing": 0.1,
+  "retrieval": "l1",
+  "amp": false,
+  "gradient_clip": 5.0,
+  "inference_batch_size": 64,
+  "query_chunk_size": 64,
+  "preprocess": {
+    "height": 252,
+    "width": 126,
+    "mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ]
+  },
+  "prediction_cache": true,
+  "dropout": 0.7,
+  "augmix": true,
+  "save_epoch_checkpoints": true,
+  "linear_probe_epochs": 0,
+  "head_init": "text_prior",
+  "head_init_l2": 0.1,
+  "head_init_images_per_domain": 3000,
+  "train_with_val": true
+}

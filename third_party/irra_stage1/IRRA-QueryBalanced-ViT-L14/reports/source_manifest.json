@@ -1,0 +1,82 @@
+{
+  "LICENSE": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/LICENSE",
+    "sha256": "d4e794c97c47c8cba759a590bdd5b1850563aca5103b7ff9895146246d7479b1"
+  },
+  "upar/__init__.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/__init__.py",
+    "sha256": "f620a9b91b6c971dc4b8dc4a55062cd8a69e3974b9acf8a40d16f2e839a2cb48"
+  },
+  "upar/attributes.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/attributes.py",
+    "sha256": "515959e7a52657f928da7af03e2c860b87eb1a9601eb152ba624d1d52a239ca5"
+  },
+  "upar/prompts.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/prompts.py",
+    "sha256": "32e686a1ef1ad9677ee1fc42dc2de5ec004603eb0e9f7d2eaf56c0af61bd1b48"
+  },
+  "upar/tokenizer.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/tokenizer.py",
+    "sha256": "3028e0a78d25e65acfe64213a1d01d447528934045da8e3ed223a1be42bf986a"
+  },
+  "upar/masking.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/masking.py",
+    "sha256": "b42f5c667be22ed47e29e75ec55818aa9055bc2c6b4774064e41671e722dc8fe"
+  },
+  "upar/sampling.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/sampling.py",
+    "sha256": "56468add0c341dd125639f4f991cd7f2dca0a3003ed9b37a6e61605def020051"
+  },
+  "upar/data.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/data.py",
+    "sha256": "e293611c5f966c6e1361c5a2f8691c8816c2196ce47f4f3348f26ab4e9e79888"
+  },
+  "upar/config.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/config.py",
+    "sha256": "30c010100a07f6f5e13dae1d7c75d87beb96abe7f5b7b1245cebf9b18dbeba4b"
+  },
+  "upar/images.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/images.py",
+    "sha256": "beb9055661468288ef7f1fb7eb51b9ae5f89d25dace3b107b62960f3786e4f94"
+  },
+  "upar/metrics.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/upar/metrics.py",
+    "sha256": "67fd759407eeca1f08bb1b0788df34e47dd99d07785572ef9644c2fc77b0e5a2"
+  },
+  "model/clip_model.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/model/clip_model.py",
+    "sha256": "f3f8500eb2631b7a827dd2ba9aebb512de57e945b200d1efa37b89ecc75cc71b"
+  },
+  "model/build.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/model/build.py",
+    "sha256": "08ee27a3aad08dcd39b1d1ae262213ee2b9753dd209267b3c7b73b6d4ddfb987"
+  },
+  "model/objectives.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/model/objectives.py",
+    "sha256": "4a4bd784a0412010a6e135f4dc9736a53a07d74d2b04441b2106175340b19e9f"
+  },
+  "datasets/transforms.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/datasets/transforms.py",
+    "sha256": "617941b9f66fcab449cbfa558ffeefed78d60d78b0586721c9f0d08d70b9d894"
+  },
+  "utils/simple_tokenizer.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/utils/simple_tokenizer.py",
+    "sha256": "47467f9a6ac46fbba629096ceb9d5f31fb7702094f3ef00423fdff19b2322c13"
+  },
+  "utils/__init__.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "utils/meter.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/utils/meter.py",
+    "sha256": "0245aa40c9a6ade9a9ac0a0f882d1a1d7b06260c667ea43e2ecb3ba846311796"
+  },
+  "solver/lr_scheduler.py": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/solver/lr_scheduler.py",
+    "sha256": "5f89bb63533ebeabcc038ee49f88efe721e7c4c4521f47b54edd348aeb43bb77"
+  },
+  "data/bpe_simple_vocab_16e6.txt.gz": {
+    "source": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced/data/bpe_simple_vocab_16e6.txt.gz",
+    "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "all_image_files_checked": true,
+  "annotation_sha256": {
+    "train": {
+      "gt.csv": "e42084aa43b31d4074624265b8239437afc6e47a359a8c0129fae4513a77d424",
+      "ids.csv": "ed24309fe944e19e9098734f05ba47158e5b7e3052f387e6dd79df07cf6a508e",
+      "queries.csv": "5bf5a8d33629b216f59b599e3152a2596fe5a7bb09e1dcb5f32d9c5ac6466a3a"
+    },
+    "val": {
+      "gt.csv": "783be600e359052c9dafe856cbfa2aee45bbd4e3eac10309394e2388bcf7c2bc",
+      "ids.csv": "7713818ec647bc02c151b073b3e486135beabfc29d3243e3cac919a84dc33ede",
+      "queries.csv": "d9f850d7caa461b9acb2ccd9ff03521a3eb4e04fb9a9cab8b752a22f714c38dd"
+    }
+  },
+  "pixel_content_deduplication_performed": false,
+  "sampling": {
+    "epoch_seed_rule": "seed + epoch - 1",
+    "exponent": 0.5,
+    "groups": 7204,
+    "num_samples": 97669,
+    "replacement": true,
+    "seed": 1,
+    "train_fingerprint": "9b857234d8c640e915154fb1e299ec366cadaa2f2435f18fc78970aaac3fbe74",
+    "type": "query_balanced"
+  },
+  "test_labels_used": false,
+  "train_domains": {
+    "Market1501": 10000,
+    "PA100k": 79001,
+    "PETA": 8668
+  },
+  "train_fingerprint": "9b857234d8c640e915154fb1e299ec366cadaa2f2435f18fc78970aaac3fbe74",
+  "train_images": 97669,
+  "train_queries": 7204,
+  "train_validation_id_overlap": 0,
+  "train_validation_resolved_path_overlap": 0,
+  "validation_fingerprint": "22a5307745779f672e55cccfff327c4a1c94a9b85a40c56f96556edbc414f14b",
+  "validation_images": 33407,
+  "validation_queries": 3462
+}

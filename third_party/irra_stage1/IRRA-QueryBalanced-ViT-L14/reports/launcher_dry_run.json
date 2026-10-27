@@ -1,0 +1,38 @@
+{
+  "run": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_170803_KST_163760",
+  "session": "qb-vitl14-20261012-170803",
+  "tmux_socket": "/tmp/irra-qb-vitl14-single.sock",
+  "command": [
+    "/opt/conda/bin/python",
+    "-B",
+    "-u",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/train_upar.py",
+    "--output",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_170803_KST_163760",
+    "--config",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/configs/train_fp32.json",
+    "--data-root",
+    "/root/workplace/UPAR-Challenge-2027-main/data",
+    "--pretrained",
+    "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/weights/ViT-L-14.pt",
+    "--gpu-uuid",
+    "GPU-4b164f16-af97-6e48-dac8-1225482ffa03",
+    "--device",
+    "cuda"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-4b164f16-af97-6e48-dac8-1225482ffa03",
+    "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+    "NVIDIA_TF32_OVERRIDE": "0",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "WORLD_SIZE": "1",
+    "PYTHONPATH": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14"
+  },
+  "gpu": "GPU-4b164f16-af97-6e48-dac8-1225482ffa03",
+  "config": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/configs/train_fp32.json",
+  "checkpoint_policy": "plain state_dict epochs1..10 only",
+  "started_at_kst": "2026-10-12T17:08:03.575371+09:00",
+  "dry_run": true
+}

@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "tests_run": 12,
+  "gpu_used": false,
+  "numerical_comparisons": [
+    {
+      "effective_batch": 32,
+      "micro": 1,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 1.5497207641601562e-06
+    },
+    {
+      "effective_batch": 32,
+      "micro": 1,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 8.344650268554688e-07
+    },
+    {
+      "effective_batch": 32,
+      "micro": 2,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 1.3113021850585938e-06
+    },
+    {
+      "effective_batch": 32,
+      "micro": 2,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 1.1920928955078125e-06
+    },
+    {
+      "effective_batch": 32,
+      "micro": 4,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 4.172325134277344e-07
+    },
+    {
+      "effective_batch": 32,
+      "micro": 4,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 8.344650268554688e-07
+    },
+    {
+      "effective_batch": 5,
+      "micro": 1,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 3.337860107421875e-06
+    },
+    {
+      "effective_batch": 5,
+      "micro": 1,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 4.291534423828125e-06
+    },
+    {
+      "effective_batch": 5,
+      "micro": 2,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 3.337860107421875e-06
+    },
+    {
+      "effective_batch": 5,
+      "micro": 2,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 5.7220458984375e-06
+    },
+    {
+      "effective_batch": 5,
+      "micro": 4,
+      "checkpointing": false,
+      "max_absolute_gradient_error": 1.9073486328125e-06
+    },
+    {
+      "effective_batch": 5,
+      "micro": 4,
+      "checkpointing": true,
+      "max_absolute_gradient_error": 2.86102294921875e-06
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

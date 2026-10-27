@@ -1,0 +1,50 @@
+{
+  "model": {
+    "img_size": [
+      384,
+      128
+    ],
+    "stride_size": 16,
+    "text_length": 77,
+    "vocab_size": 49408,
+    "temperature": 0.02,
+    "cmt_depth": 4,
+    "map_loss_weight": 1.0
+  },
+  "train": {
+    "batch_size": 32,
+    "test_batch_size": 128,
+    "num_workers": 8,
+    "num_epoch": 60,
+    "lr": 1e-05,
+    "weight_decay": 4e-05,
+    "alpha": 0.9,
+    "beta": 0.999,
+    "adam_eps": 0.001,
+    "milestones": [
+      20,
+      50
+    ],
+    "gamma": 0.1,
+    "warmup_factor": 0.1,
+    "warmup_epochs": 5,
+    "warmup_method": "linear",
+    "lrscheduler": "cosine",
+    "target_lr": 0.0,
+    "power": 0.9,
+    "seed": 1,
+    "log_period": 100,
+    "eval_query_batch_size": 32
+  },
+  "sampling": {
+    "type": "query_balanced",
+    "exponent": 0.5,
+    "replacement": true,
+    "seed": 1,
+    "num_samples": 97669,
+    "groups": 7204,
+    "train_fingerprint": "9b857234d8c640e915154fb1e299ec366cadaa2f2435f18fc78970aaac3fbe74",
+    "epoch_seed_rule": "seed + epoch - 1"
+  },
+  "precision": "FP32"
+}

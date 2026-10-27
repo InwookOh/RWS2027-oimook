@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-10-13T04:09:45.102028+00:00",
+  "project": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr",
+  "initial_checkpoint": {
+    "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth",
+    "sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b",
+    "verified_epoch": 2
+  },
+  "cpu_preflight": {
+    "report": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/reports/cpu_preflight.json",
+    "passed": true,
+    "batch_size": 2,
+    "global_score_max_abs_difference": 0.0,
+    "strict_original_and_expanded_load": true,
+    "frozen_state_unchanged": true,
+    "multiscale_shapes": {
+      "block16": [
+        3,
+        243,
+        1024
+      ],
+      "block24_final": [
+        3,
+        244,
+        768
+      ],
+      "block8": [
+        3,
+        243,
+        1024
+      ],
+      "joint_dim": 768
+    },
+    "trainable_parameters": 4006955
+  },
+  "cuda_preflight": {
+    "status": "incomplete",
+    "batch32_forward_backward_optimizer_step": "not completed",
+    "strict_cuda_state_dict_roundtrip": "not completed",
+    "peak_vram": "not measured",
+    "last_attempt_log": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/reports/gpu_preflight_attempt4.log",
+    "observed_stall": "CUDA visual forward did not complete; UUID-scoped nvidia-smi timed out while the preflight owned a CUDA context. SIGINT was sent only to the preflight process; it exited and the assigned GPU returned to 0 MiB."
+  },
+  "assigned_gpu": {
+    "uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06",
+    "last_observed_after_preflight_exit": {
+      "name": "NVIDIA TITAN Xp",
+      "memory_used_mib": 0,
+      "utilization_percent": 0
+    }
+  },
+  "existing_source_run": {
+    "project": "IRRA-QueryBalanced-ViT-L14",
+    "status_path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/status.json",
+    "phase": "training",
+    "epoch": 5,
+    "batch": 1504,
+    "batches_total": 3053,
+    "pid_recorded": 13914,
+    "pid_visible_in_this_container": false,
+    "memory_reserved_bytes": 8977907712,
+    "gpu_uuid": "GPU-4b164f16-af97-6e48-dac8-1225482ffa03",
+    "session": "qb-vitl14-20261012-171058",
+    "note": "The source run is bound by current_run.json to a different GPU UUID; it was not modified or stopped."
+  },
+  "training": {
+    "started": false,
+    "tmux_session_created": false,
+    "run_directory_created": false,
+    "epoch_checkpoints_created": [],
+    "reason": "The required CUDA Batch-32 preflight did not pass; the trainer intentionally requires a successful GPU preflight report."
+  },
+  "protected_projects_modified": false
+}

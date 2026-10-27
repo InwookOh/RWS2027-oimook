@@ -1,0 +1,32 @@
+# Local training: Python 3.11, NVIDIA driver 470.182.03, GTX TITAN X.
+# Keep torch/torchvision versions aligned with the competition; use CUDA 11.8
+# wheels locally because CUDA 12.1 cannot run on this host driver.
+# Verified on GPU 0: ConvNeXt forward/backward and AdamW step; pip check passed.
+# Standard eager training is verified; torch.compile/custom CUDA kernels are not.
+# Competition runtime: Python 3.11, torch 2.4.1, CUDA 12.1, cuDNN 9.
+# Validate exported state_dict weights/inference in that runtime before submission.
+# Original environment.yml is unchanged and does not pin Python.
+# Before pip installation in a newly created starter environment, run:
+# CONDA_SOLVER=classic conda install -n rws-upar-challenge python=3.11 pip --solver classic
+# conda activate rws-upar-challenge
+# python -m pip install -r requirements.txt
+# Extra inference dependencies/weights must be bundled; submission has no network.
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.4.1+cu118
+torchvision==0.19.1+cu118
+numpy==1.26.4
+Pillow==10.4.0
+
+# Dataset preparation and training utilities (not guaranteed in submission runtime).
+gdown==6.4.1
+requests==2.32.3
+tqdm==4.67.1
+pandas==2.2.3
+scikit-learn==1.5.2
+matplotlib==3.9.2
+notebook==7.2.2
+
+# Teammates' members (training and checkpoint conversion only; inference needs none of these).
+open_clip_torch>=2.26,<3
+ftfy
+regex

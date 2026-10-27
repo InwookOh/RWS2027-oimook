@@ -1,0 +1,164 @@
+{
+  "actual_dataset": true,
+  "architecture": {
+    "MAP_blocks": 4,
+    "MAP_dim": 768,
+    "MAP_heads": 12,
+    "position": [
+      244,
+      1024
+    ],
+    "projection": [
+      768,
+      768
+    ],
+    "text_blocks": 12,
+    "text_heads": 12,
+    "text_width": 768,
+    "vision_blocks": 24,
+    "vision_heads": 16,
+    "vision_width": 1024
+  },
+  "config": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/configs/train_fp32.json",
+  "data_audit": {
+    "all_image_files_checked": true,
+    "annotation_sha256": {
+      "train": {
+        "gt.csv": "e42084aa43b31d4074624265b8239437afc6e47a359a8c0129fae4513a77d424",
+        "ids.csv": "ed24309fe944e19e9098734f05ba47158e5b7e3052f387e6dd79df07cf6a508e",
+        "queries.csv": "5bf5a8d33629b216f59b599e3152a2596fe5a7bb09e1dcb5f32d9c5ac6466a3a"
+      },
+      "val": {
+        "gt.csv": "783be600e359052c9dafe856cbfa2aee45bbd4e3eac10309394e2388bcf7c2bc",
+        "ids.csv": "7713818ec647bc02c151b073b3e486135beabfc29d3243e3cac919a84dc33ede",
+        "queries.csv": "d9f850d7caa461b9acb2ccd9ff03521a3eb4e04fb9a9cab8b752a22f714c38dd"
+      }
+    },
+    "pixel_content_deduplication_performed": false,
+    "sampling": {
+      "epoch_seed_rule": "seed + epoch - 1",
+      "exponent": 0.5,
+      "groups": 7204,
+      "num_samples": 97669,
+      "replacement": true,
+      "seed": 1,
+      "train_fingerprint": "9b857234d8c640e915154fb1e299ec366cadaa2f2435f18fc78970aaac3fbe74",
+      "type": "query_balanced"
+    },
+    "test_labels_used": false,
+    "train_domains": {
+      "Market1501": 10000,
+      "PA100k": 79001,
+      "PETA": 8668
+    },
+    "train_fingerprint": "9b857234d8c640e915154fb1e299ec366cadaa2f2435f18fc78970aaac3fbe74",
+    "train_images": 97669,
+    "train_queries": 7204,
+    "train_validation_id_overlap": 0,
+    "train_validation_resolved_path_overlap": 0,
+    "validation_fingerprint": "22a5307745779f672e55cccfff327c4a1c94a9b85a40c56f96556edbc414f14b",
+    "validation_images": 33407,
+    "validation_queries": 3462
+  },
+  "device": "cuda:0",
+  "full_training_started": false,
+  "gpu": {
+    "cuda_device": "cuda:0",
+    "name": "NVIDIA TITAN Xp",
+    "other_compute_processes": [],
+    "physical_minor": 3,
+    "prelaunch_memory_mib": 0,
+    "total_memory_mib": 12196,
+    "uuid": "GPU-4b164f16-af97-6e48-dac8-1225482ffa03"
+  },
+  "parameters": 496908544,
+  "passed": false,
+  "precision": "FP32",
+  "pretrained": {
+    "clip_config": {
+      "context_length": 77,
+      "embed_dim": 768,
+      "image_resolution": [
+        378,
+        126
+      ],
+      "stride_size": 14,
+      "transformer_heads": 12,
+      "transformer_layers": 12,
+      "transformer_width": 768,
+      "vision_layers": 24,
+      "vision_patch_size": 14,
+      "vision_width": 1024,
+      "vocab_size": 49408
+    },
+    "ignored_scalars": [
+      "context_length",
+      "input_resolution",
+      "logit_scale",
+      "vocab_size"
+    ],
+    "missing_keys": [],
+    "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/weights/ViT-L-14.pt",
+    "position_resize": "FP32 bilinear align_corners=False; CLS preserved",
+    "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    "shape_mismatches": [],
+    "source_grid": [
+      16,
+      16
+    ],
+    "target_grid": [
+      27,
+      9
+    ],
+    "target_position_shape": [
+      244,
+      1024
+    ],
+    "unexpected_keys": [],
+    "verified_backbone_keys": 445
+  },
+  "steps": [
+    {
+      "losses": {
+        "effective_batch_size": 32,
+        "gradient_cache": true,
+        "loss": 38.42718927250352,
+        "map_acc": 0.0,
+        "map_loss": 10.758173388104105,
+        "map_tokens": 43,
+        "micro_batch_size": 1,
+        "micro_batches": 32,
+        "optimizer_steps": 1,
+        "sdm_batch_size": 32,
+        "sdm_loss": 27.669015884399414
+      },
+      "max_memory_allocated": 8409155072,
+      "max_memory_reserved": 8795455488,
+      "memory_allocated": 7953807872,
+      "memory_reserved": 8795455488,
+      "seconds": 116.94943952932954,
+      "step": 1
+    },
+    {
+      "losses": {
+        "effective_batch_size": 32,
+        "gradient_cache": true,
+        "loss": 38.675939233679514,
+        "map_acc": 0.0,
+        "map_loss": 10.784906061072096,
+        "map_tokens": 38,
+        "micro_batch_size": 1,
+        "micro_batches": 32,
+        "optimizer_steps": 1,
+        "sdm_batch_size": 32,
+        "sdm_loss": 27.891033172607422
+      },
+      "max_memory_allocated": 8451461632,
+      "max_memory_reserved": 8956936192,
+      "memory_allocated": 7966851584,
+      "memory_reserved": 8956936192,
+      "seconds": 27.72524126805365,
+      "step": 2
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+data/
+outputs/
+.git/
+**/__pycache__/
+*.pt
+*.pth
+*.zip

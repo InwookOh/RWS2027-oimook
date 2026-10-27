@@ -1,0 +1,53 @@
+{
+  "architecture": "qb-vit-l14-frozen-multiscale-local-8-16-24-v1",
+  "epoch_weight_policy": "plain full-model state_dict only; one epoch_00N.pth for each completed epoch 1..5",
+  "epochs": [
+    {
+      "bytes": 2003869657,
+      "epoch": 1,
+      "keys": 532,
+      "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_001.pth",
+      "plain_state_dict": true,
+      "sha256": "c217647cd22f1570a91456672d7222e3c6157d8a6b7d6314aed1bffdadb44b78",
+      "strict_reload": true
+    },
+    {
+      "bytes": 2003869657,
+      "epoch": 2,
+      "keys": 532,
+      "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_002.pth",
+      "plain_state_dict": true,
+      "sha256": "a713ad189d093881ae8ae66f0557e3f1509e5e3ce61c45887238ef5baab45e63",
+      "strict_reload": true
+    },
+    {
+      "bytes": 2003869657,
+      "epoch": 3,
+      "keys": 532,
+      "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_003.pth",
+      "plain_state_dict": true,
+      "sha256": "e71706f9d683662f11f736e4b923382f66ce4549589d873321c2de4cc9daf575",
+      "strict_reload": true
+    },
+    {
+      "bytes": 2003869657,
+      "epoch": 4,
+      "keys": 532,
+      "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_004.pth",
+      "plain_state_dict": true,
+      "sha256": "e7dc6213ed60e10590d5d3d784e44fd77406d99c4862e3c162af6a8aecbffadf",
+      "strict_reload": true
+    },
+    {
+      "bytes": 2003869657,
+      "epoch": 5,
+      "keys": 532,
+      "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST/epoch_005.pth",
+      "plain_state_dict": true,
+      "sha256": "45e7929e4c23709e3dee0ea246100c09133c7fa9d19e9606d3af236440336804",
+      "strict_reload": true
+    }
+  ],
+  "frozen_state_sha256_before_training": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "initial_checkpoint_sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b"
+}

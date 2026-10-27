@@ -1,0 +1,42 @@
+{
+  "backbone": "dinov2_vit_l14",
+  "pretrained": "dinov2_l14",
+  "seed": 2027,
+  "deterministic": false,
+  "epochs": 10,
+  "batch_size": 16,
+  "accumulation_steps": 2,
+  "workers": 4,
+  "cpu_threads": 4,
+  "learning_rate": 5e-06,
+  "weight_decay": 0.0005,
+  "optimizer_foreach": false,
+  "loss": "deepmar_bce",
+  "ema": true,
+  "ema_decay": 0.999,
+  "label_smoothing": 0.1,
+  "retrieval": "l1",
+  "amp": false,
+  "gradient_clip": 5.0,
+  "inference_batch_size": 64,
+  "query_chunk_size": 64,
+  "preprocess": {
+    "height": 252,
+    "width": 126,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "prediction_cache": true,
+  "dropout": 0.7,
+  "augmix": true,
+  "save_epoch_checkpoints": true,
+  "linear_probe_epochs": 1
+}

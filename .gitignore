@@ -1,0 +1,25 @@
+# 데이터
+/data/
+
+# 학습 결과
+/checkpoints/
+/outputs/
+/runs/
+/wandb/
+*.pt
+*.pth
+*.ckpt
+
+# Python 및 로컬 설정
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Synology 메타데이터
+@eaDir/
+
+# Generated submission archives
+*.zip

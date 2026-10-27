@@ -1,0 +1,194 @@
+{
+  "actual_gpu": {
+    "compute_apps": [],
+    "memory_total_mib": 12196,
+    "memory_used_mib": 2,
+    "name": "NVIDIA TITAN Xp",
+    "pci_bus_id": "00000000:09:00.0",
+    "utilization_gpu_percent": 0,
+    "uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06"
+  },
+  "added_state_keys": [
+    "local_branch.attribute_bias",
+    "local_branch.attribute_queries",
+    "local_branch.attribute_weights",
+    "local_branch.cross_attention.in_proj_bias",
+    "local_branch.cross_attention.in_proj_weight",
+    "local_branch.cross_attention.out_proj.bias",
+    "local_branch.cross_attention.out_proj.weight",
+    "local_branch.output_norm.bias",
+    "local_branch.output_norm.weight",
+    "local_branch.patch_norm.bias",
+    "local_branch.patch_norm.weight",
+    "local_branch.query_norm.bias",
+    "local_branch.query_norm.weight",
+    "multiscale.fusion_logits",
+    "multiscale.norms.16.bias",
+    "multiscale.norms.16.weight",
+    "multiscale.norms.8.bias",
+    "multiscale.norms.8.weight",
+    "multiscale.projections.16.bias",
+    "multiscale.projections.16.weight",
+    "multiscale.projections.8.bias",
+    "multiscale.projections.8.weight"
+  ],
+  "architecture": "qb-vit-l14-frozen-multiscale-local-8-16-24-v1",
+  "checkpoint_policy": "plain full-model state_dict only; one epoch_00N.pth for each completed epoch 1..5",
+  "cuda_compute_capability": [
+    6,
+    1
+  ],
+  "cuda_device_name": "NVIDIA TITAN Xp",
+  "data_root": "/root/workplace/UPAR-Challenge-2027-main/data",
+  "effective_batch_count_per_epoch": 3053,
+  "expected_gpu_uuid": "GPU-06e77b68-4e08-6eb2-372c-0c4b30aa3e06",
+  "frozen_parameter_count": 496908544,
+  "frozen_state_sha256_before_training": "42cb8d0e66c5ed98d58d9a8b362dd5a89f1bdbdb66fea64ffb7667565aa055d2",
+  "initial_checkpoint": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth",
+  "initial_checkpoint_provenance": {
+    "bytes": 1987834245,
+    "epoch": 2,
+    "metric_record": {
+      "epoch": 2,
+      "epoch_seconds": 15998.391094145365,
+      "global_step": 6106,
+      "gpu_memory": {
+        "max_memory_allocated": 8540649984,
+        "max_memory_reserved": 8977907712,
+        "memory_allocated": 5966972416,
+        "memory_reserved": 8977907712
+      },
+      "losses": {
+        "loss": 5.133154783610586,
+        "map_loss": 2.7746750891350955,
+        "sdm_loss": 2.3584796944754896
+      },
+      "lr": 2.8000000000000003e-06,
+      "metrics": {
+        "Rank-1": 0.2605430387059503,
+        "Rank-10": 0.6062969381860196,
+        "Rank-5": 0.5063547082611207,
+        "mADM": 0.6892085492607469,
+        "mAP": 0.27867486191652097,
+        "mINP": 0.18366185188173428
+      },
+      "next_lr": 4.600000000000001e-06,
+      "weight": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth"
+    },
+    "model_config": {
+      "cmt_depth": 4,
+      "img_size": [
+        378,
+        126
+      ],
+      "map_loss_weight": 1.0,
+      "stride_size": 14,
+      "temperature": 0.02,
+      "text_length": 77,
+      "vocab_size": 49408
+    },
+    "path": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth",
+    "plain_state_dict_policy": "plain state_dict only, completed epochs 1..10",
+    "sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b",
+    "validation_log": "2026-10-12 17:13:51,959 INFO Validation Epoch 2: mADM=68.921%, mAP=27.867%, Rank-1=26.054%, Rank-5=50.635%, Rank-10=60.630%, mINP=18.366%; weights=/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37/epoch_002.pth"
+  },
+  "initial_checkpoint_sha256": "9bca97569ed25139ed68ebadaf80af3997f09bcc015eb1321a7a4222f22dfa3b",
+  "initial_run_dir": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QueryBalanced-ViT-L14/experiments/full_20261012_171058_KST_d66f37",
+  "model": {
+    "attr_loss_weight": 0.5,
+    "attribute_score": "nll",
+    "cmt_depth": 4,
+    "fusion_weight": 0.0,
+    "img_size": [
+      378,
+      126
+    ],
+    "initial_scale_weights": [
+      0.2,
+      0.2,
+      0.6
+    ],
+    "local_heads": 8,
+    "map_loss_weight": 1.0,
+    "multiscale_blocks": [
+      8,
+      16,
+      24
+    ],
+    "stride_size": 14,
+    "temperature": 0.02,
+    "text_length": 77,
+    "vocab_size": 49408
+  },
+  "preflight_report": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/reports/gpu_preflight_attempt5.json",
+  "run_directory": "/root/workplace/UPAR-Challenge-2027-main/IRRA-QB-ViT-L14-FrozenMultiScaleLocalAttr/experiments/frozen_localattr_e5_20261013_041809_KST",
+  "train": {
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 0.001,
+    "batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "gradient_clipping": null,
+    "log_period": 100,
+    "lr": 0.0001,
+    "num_epoch": 5,
+    "num_workers": 8,
+    "precision": "FP32",
+    "scheduler": "cosine",
+    "scheduler_eta_min": 1e-05,
+    "scheduler_step": "once after validation and checkpoint save at each epoch end",
+    "scheduler_t_max": 5,
+    "seed": 20271013,
+    "warmup_epochs": 0,
+    "weight_decay": 4e-05
+  },
+  "trainable_parameter_count": 4006955,
+  "trainable_parameter_names": [
+    "local_branch.attribute_queries",
+    "local_branch.attribute_weights",
+    "local_branch.attribute_bias",
+    "local_branch.query_norm.weight",
+    "local_branch.query_norm.bias",
+    "local_branch.patch_norm.weight",
+    "local_branch.patch_norm.bias",
+    "local_branch.cross_attention.in_proj_weight",
+    "local_branch.cross_attention.in_proj_bias",
+    "local_branch.cross_attention.out_proj.weight",
+    "local_branch.cross_attention.out_proj.bias",
+    "local_branch.output_norm.weight",
+    "local_branch.output_norm.bias",
+    "multiscale.fusion_logits",
+    "multiscale.norms.8.weight",
+    "multiscale.norms.8.bias",
+    "multiscale.norms.16.weight",
+    "multiscale.norms.16.bias",
+    "multiscale.projections.8.weight",
+    "multiscale.projections.8.bias",
+    "multiscale.projections.16.weight",
+    "multiscale.projections.16.bias"
+  ],
+  "validation": {
+    "coarse_weights": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "evaluation_micro_batch_size": 32,
+    "fine_radius": 0.1,
+    "fine_step": 0.02,
+    "fusion_method": "Global+NLL, z-score each per-query branch, equalized with validation-selected weight",
+    "num_workers": 8,
+    "selection": "maximum validation mADM; ties prefer lower local weight",
+    "test_batch_size": 128
+  }
+}

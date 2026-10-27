@@ -1,0 +1,47 @@
+{
+  "model": {
+    "img_size": [
+      378,
+      126
+    ],
+    "stride_size": 14,
+    "text_length": 77,
+    "vocab_size": 49408,
+    "temperature": 0.02,
+    "cmt_depth": 4,
+    "map_loss_weight": 1.0
+  },
+  "train": {
+    "batch_size": 32,
+    "test_batch_size": 128,
+    "num_workers": 8,
+    "num_epoch": 60,
+    "lr": 1e-05,
+    "weight_decay": 4e-05,
+    "alpha": 0.9,
+    "beta": 0.999,
+    "adam_eps": 0.001,
+    "milestones": [
+      20,
+      50
+    ],
+    "gamma": 0.1,
+    "warmup_factor": 0.1,
+    "warmup_epochs": 5,
+    "warmup_method": "linear",
+    "lrscheduler": "cosine",
+    "target_lr": 0.0,
+    "power": 0.9,
+    "seed": 1,
+    "log_period": 100,
+    "eval_query_batch_size": 32
+  },
+  "precision": "FP32",
+  "memory": {
+    "micro_batch_size": 1,
+    "accumulation_steps": 32,
+    "gradient_checkpointing": true,
+    "evaluation_micro_batch_size": 4
+  },
+  "checkpoint_policy": "plain state_dict only; completed epochs 1..10; no weights epochs 11..60"
+}

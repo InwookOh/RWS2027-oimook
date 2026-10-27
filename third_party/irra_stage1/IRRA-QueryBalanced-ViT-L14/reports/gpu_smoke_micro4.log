@@ -1,0 +1,10 @@
+GPU PREFLIGHT {'uuid': 'GPU-4b164f16-af97-6e48-dac8-1225482ffa03', 'physical_minor': 3, 'cuda_device': 'cuda:0', 'name': 'NVIDIA TITAN Xp', 'total_memory_mib': 12196, 'prelaunch_memory_mib': 0, 'other_compute_processes': []}
+Loading and strictly verifying official ViT-L/14
+Training Model with ['sdm', 'map'] tasks
+Reading actual train/validation and testing QueryBalanced sampler
+ACTUAL FP32 UPDATE {'step': 1, 'seconds': 210.53552906028926, 'losses': {'loss': 38.42718973825144, 'sdm_loss': 27.669015884399414, 'map_loss': 10.758173853852028, 'map_acc': 0.0, 'map_tokens': 43, 'effective_batch_size': 32, 'sdm_batch_size': 32, 'micro_batch_size': 4, 'micro_batches': 8, 'gradient_cache': True, 'optimizer_steps': 1}, 'max_memory_allocated': 8418430464, 'max_memory_reserved': 8814329856, 'memory_allocated': 7963083264, 'memory_reserved': 8814329856}
+ACTUAL FP32 UPDATE {'step': 2, 'seconds': 15.42169794254005, 'losses': {'loss': 38.67594658701043, 'sdm_loss': 27.891040802001953, 'map_loss': 10.78490578500848, 'map_acc': 0.0, 'map_tokens': 38, 'effective_batch_size': 32, 'sdm_batch_size': 32, 'micro_batch_size': 4, 'micro_batches': 8, 'gradient_cache': True, 'optimizer_steps': 1}, 'max_memory_allocated': 8540649984, 'max_memory_reserved': 8973713408, 'memory_allocated': 7963695616, 'memory_reserved': 8973713408}
+Actual small public-validation retrieval check
+Plain state_dict save/reload integrity check in temporary folder
+Training Model with ['sdm'] tasks
+ACTUAL GPU CHECK PASSED 551.6068850271404
